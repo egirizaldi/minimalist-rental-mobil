@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>LuxeDrive Indonesia | Eksklusivitas Perjalanan Tanpa Batas</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#8b8a8a",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "secondary-fixed": "#66ff8e",
+                    "on-primary-fixed-variant": "#7b2b3b",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#400012",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary-fixed": "#ffd9dd",
+                    "tertiary-container": "#232323",
+                    "on-surface": "#1a1c1c",
+                    "secondary-container": "#5dfd8a",
+                    "on-secondary-fixed-variant": "#005322",
+                    "outline": "#877274",
+                    "inverse-surface": "#2f3131",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-container": "#cf6d7c",
+                    "secondary-fixed-dim": "#3de273",
+                    "tertiary-fixed": "#e5e2e1",
+                    "outline-variant": "#dac0c2",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb2bb",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-tint": "#994251",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#007232",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#544244",
+                    "on-secondary-fixed": "#002109",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "primary": "#260008",
+                    "surface": "#f9f9f9",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "secondary": "#006d2f",
+                    "tertiary": "#0d0d0d",
+                    "primary-container": "#4c0519",
+                    "surface-container": "#eeeeee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "stack-lg": "32px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+        }
+        .luxury-gradient {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(38,0,8,0.05) 100%);
+        }
+        .hero-clip {
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0% 100%);
+        }
+        .hover-card:hover {
+            transform: translateY(-4px);
+            border-color: #4c0519;
+            box-shadow: 0 4px 20px -10px rgba(76, 5, 25, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto bg-surface-container-lowest border-b border-outline-variant">
+<div class="font-display-lg text-display-lg font-bold text-primary">LuxeDrive Indonesia</div>
+<nav class="hidden md:flex items-center gap-stack-lg">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="index.html">Beranda</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="katalog.html">Katalog</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="paket_wisata.html">Paket</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="tentang.html">Tentang Kami</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="contact.html">Kontak</a>
+</nav>
+<button class="bg-[#25D366] text-white px-6 py-2.5 rounded-lg font-label-md flex items-center gap-2 hover:opacity-90 active:scale-95 transition-all">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+            Hubungi Admin
+        </button>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[870px] min-h-[600px] flex items-center overflow-hidden bg-primary overflow-hidden">
+<div class="absolute inset-0 opacity-40">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic side profile of a dark obsidian-colored luxury sedan driving through a modern Indonesian metropolitan skyline at dusk. The lighting is low-key with sharp highlights on the car's metallic curves, reflecting city lights. The atmosphere is sophisticated and premium, dominated by deep burgundy and charcoal tones to match the corporate identity of LuxeDrive." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBODO_tyJdD3TIDpApOgGSEYAfqrEv7dHuxNrmhpXW0Rs_cH8dJD-bpzjRSpiXx5TZuEo8uVDukYmv7wW8EVhYSluoV410xXCdYyDBR0dF-_zAS2kl65AFINN3tB4uwiE2xAbxrqBfIBTAhdmf79hTFAx--50YoPxFUUo-PRZjZufBCceHG7_PNxuy3jMiDcM_cqcRT5GdOYT3WpOLoioxGxbhNgEJIhuiSGXXUGDPspfjIxxgEBtLw')"></div>
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary via-primary/80 to-transparent"></div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl">
+<span class="inline-block bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-label-md mb-stack-md uppercase tracking-widest">Premium Chauffeur Service</span>
+<h1 class="font-display-lg text-display-lg text-white mb-stack-md leading-tight">
+                        Eksklusivitas Perjalanan <br/><span class="text-primary-fixed-dim">Tanpa Batas</span>
+</h1>
+<p class="font-body-lg text-white/80 mb-stack-lg max-w-lg">
+                        Nikmati kemewahan armada terbaru dan layanan VIP terbaik di Indonesia. Hadir untuk memenuhi kebutuhan profesional, kenegaraan, dan momen spesial Anda dengan standar kenyamanan tertinggi.
+                    </p>
+<div class="flex flex-wrap gap-stack-md">
+<button class="bg-[#25D366] text-white px-10 py-4 rounded-lg font-headline-sm flex items-center gap-3 hover:scale-105 transition-transform">
+<span class="material-symbols-outlined">directions_car</span>
+                            Sewa Sekarang
+                        </button>
+<button class="border border-white/30 text-white px-10 py-4 rounded-lg font-headline-sm hover:bg-white/10 transition-colors">
+                            Lihat Katalog
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Value Propositions -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<div class="p-stack-lg border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-[32px]">verified_user</span>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Armada Terawat</h3>
+<p class="text-on-surface-variant">Setiap kendaraan kami melewati inspeksi berkala yang ketat untuk menjamin keamanan dan kebersihan standar bintang lima.</p>
+</div>
+<div class="p-stack-lg border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-[32px]">person_check</span>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Driver Profesional</h3>
+<p class="text-on-surface-variant">Pengemudi terlatih yang menguasai protokol VIP, fasih berbahasa Inggris, dan memiliki pengetahuan rute terbaik.</p>
+</div>
+<div class="p-stack-lg border border-outline-variant rounded-xl group hover:border-primary transition-colors">
+<div class="w-14 h-14 bg-surface-container-high rounded-lg flex items-center justify-center mb-stack-md group-hover:bg-primary-container transition-colors">
+<span class="material-symbols-outlined text-primary group-hover:text-white text-[32px]">support_agent</span>
+</div>
+<h3 class="font-headline-sm text-primary mb-2">Layanan 24/7</h3>
+<p class="text-on-surface-variant">Tim concierge kami selalu siap sedia 24 jam untuk melayani kebutuhan mendadak dan perubahan jadwal Anda.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Quick Fleet Preview -->
+<section class="py-section-gap bg-surface">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="flex justify-between items-end mb-stack-lg">
+<div>
+<h2 class="font-display-lg text-[32px] text-primary mb-2">Armada Pilihan</h2>
+<p class="text-on-surface-variant">Pilih dari koleksi kendaraan termewah kami</p>
+</div>
+<a class="text-primary font-bold flex items-center gap-2 hover:underline" href="#">
+                        Lihat Semua Armada <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-stack-lg">
+<!-- Toyota Alphard -->
+<div class="bg-white border border-outline-variant rounded-xl overflow-hidden hover-card transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A professional studio photograph of a white 2024 Toyota Alphard Executive Lounge. The lighting is soft and even, highlighting the chrome grille and sleek boxy silhouette. The background is a clean, minimal white studio environment, emphasizing a premium corporate aesthetic and spotless condition of the vehicle." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCgAFRUpxLO3UIO2RUnzdzZCYIN3HJhGhnccmAVZTLGNAE9m7nAkQdOU51O-2WAudmFARa4wNev3mfMzhDKexT-hXI1mAptN3EbORtJ3mkeXs5_hphOm679lkZF3bGpwkVvkrs92iPGF6YE1kyEXy30LkSg6xOGEJy8WgSYOsBZRhQ6_w7TQstYBCJo9eG9VtpI69AiwiAUn15GSn41N_UnbRnruI9ssEo8f4dETUEsPt6NcEGNPC3T')"></div>
+</div>
+<div class="p-stack-md">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline-md text-primary">Toyota Alphard</h4>
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded text-label-md">2024 Model</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_extra</span>
+<span>7 Kursi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+<span>Matic</span>
+</div>
+</div>
+<button class="w-full border border-primary-container text-primary-container py-3 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-all">
+                                Lihat Detail
+                            </button>
+</div>
+</div>
+<!-- Mercedes Benz -->
+<div class="bg-white border border-outline-variant rounded-xl overflow-hidden hover-card transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A high-end luxury black Mercedes-Benz S-Class sedan parked in front of a modern minimalist architectural building. The lighting captures the deep obsidian reflections on the car's body. The scene is shot with a shallow depth of field, highlighting the prestige and elegance of the vehicle in a luxury corporate context." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBfFt-jVd2CfJnXs2qXopee0EQAd9ULxmxphDM5zKpY0z3k29dn76O3mbci3aqgN8VxarBQbu1hOP0QeQ0RUsv7afuwtp16VLAt_u9FRSy60o_iorwHCk2ye5pkrHO9VrSpngbXPXiR7Qm7V7oOyPhlu13QQDl3IIhLfteUGEVcV7v2unyatooQrn86UoHtaZQCo0T1-X68Z3Q5a7CCMpQxQOEtIq-Ov1CaJoUsOZOLX4_l16oc4h2c')"></div>
+</div>
+<div class="p-stack-md">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline-md text-primary">Mercedes Benz S-Class</h4>
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded text-label-md">Premium</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_extra</span>
+<span>4 Kursi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">bolt</span>
+<span>V8 Engine</span>
+</div>
+</div>
+<button class="w-full border border-primary-container text-primary-container py-3 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-all">
+                                Lihat Detail
+                            </button>
+</div>
+</div>
+<!-- Fortuner -->
+<div class="bg-white border border-outline-variant rounded-xl overflow-hidden hover-card transition-all duration-300">
+<div class="h-64 bg-surface-container overflow-hidden">
+<div class="w-full h-full bg-cover bg-center" data-alt="A dark grey Toyota Fortuner GR Sport 2024 parked on a clean asphalt road with a lush Indonesian tropical landscape in the background. The car looks powerful and rugged yet perfectly polished for VIP transport. The lighting is early morning gold, casting long elegant shadows and highlighting the aggressive front design." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuClBHlhG9TgX4Z6Ahm3JSkghnEcHN5NiWOYo_MogoSWrdqYWYs1NYvNqwWQp0pq0FbZFgcZTfKhoLPqRTqHfPvesktVF-rfbUm0jEgqLdddPQ2PZb6Po1v5OStlDS12QMJ7SV9hkadgXHCXWSU5Fv4ilfcPHxieFFX1BdHcyYyQNkb4XEuIYun8zVHMurfAR1-arMsYuVf30d9NxeYzVqcQm945go-vRJFu7zhXLiDQ3Qbjm6h--xUi')"></div>
+</div>
+<div class="p-stack-md">
+<div class="flex justify-between items-start mb-4">
+<h4 class="font-headline-md text-primary">Toyota Fortuner GR</h4>
+<span class="bg-primary-container/10 text-primary px-3 py-1 rounded text-label-md">SUV</span>
+</div>
+<div class="grid grid-cols-2 gap-4 mb-6 text-on-surface-variant">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">airline_seat_recline_extra</span>
+<span>7 Kursi</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">landscape</span>
+<span>4x4</span>
+</div>
+</div>
+<button class="w-full border border-primary-container text-primary-container py-3 rounded-lg font-bold hover:bg-primary-container hover:text-white transition-all">
+                                Lihat Detail
+                            </button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-section-gap bg-primary-container text-white overflow-hidden relative">
+<div class="absolute right-[-10%] top-0 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[500px]" style="font-variation-settings: 'FILL' 1;">format_quote</span>
+</div>
+<div class="max-w-container-max mx-auto px-gutter relative z-10">
+<h2 class="font-display-lg text-[32px] mb-12 text-center">Kepercayaan Klien Korporat Kami</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<div class="bg-white/10 backdrop-blur-sm p-stack-lg rounded-2xl border border-white/20">
+<p class="font-body-lg italic mb-stack-md">"Layanan LuxeDrive sangat impresif. Driver mereka datang 30 menit lebih awal dengan seragam yang sangat rapi. Sangat cocok untuk tamu kenegaraan dan VIP kami."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of a mature Indonesian corporate executive in a sharp navy blue suit and tie. He has a warm yet authoritative expression. The background is a blurred high-end office lobby with warm indoor lighting, maintaining the premium corporate aesthetic of the LuxeDrive brand." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBql7_CwMXO9yufxWSOAP74Zx5-Ph4K2Q2KSK3vYG-7lC3Y8s2-rtGukEgObfdtQw8Jdd7Duq50NFztdTF0sq6lDNCKKN7w7Y7tAAWtIvEXth0iW_f1Ci9H0zAFjwfwaI5rFf5xbqDXwtncm0gpCcJQ9bC0U55CgHJneOGkt3xspqygigJ0iy1YR9hWAaFmy5uVtrQYOvWq0TnkFVWNctbShxvGYopMbNlta4258bTSxYreUYwO7Rmm"/>
+</div>
+<div>
+<p class="font-bold">Bambang Susilo</p>
+<p class="text-sm text-white/60">Direktur Operasional, Global Tech Indonesia</p>
+</div>
+</div>
+</div>
+<div class="bg-white/10 backdrop-blur-sm p-stack-lg rounded-2xl border border-white/20">
+<p class="font-body-lg italic mb-stack-md">"Kami selalu menggunakan LuxeDrive untuk kunjungan Direksi asing. Kondisi Alphard selalu wangi dan bersih seperti baru. Koordinasi admin sangat responsif."</p>
+<div class="flex items-center gap-4">
+<div class="w-12 h-12 rounded-full bg-white/20 overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A professional headshot of an elegant Indonesian female business leader in a tailored charcoal blazer. She is smiling confidently. The lighting is soft and professional, set against a modern glass-walled boardroom background that reflects a high-trust, elite corporate environment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNbIEVryVqpCX8V6cFyC1H9qYeWj1hE13LZ8959KivOqHgjvz0_hqLKU83Ko8MCDsN3ZQkfs8NDoD9vgvxKPN7H_GSPQmrkXtfKf6wO6GWVrtNmKdNW5nCcGB-Oo9EdzEghqjl-Z19l7aRqDxor9g-skfBxub9UcETKl6vrKMjp1XOziEfd-VFJ_XrxVHJT4A9u5DsoDiflrXAUa6_CvWJPZl-_MNK3c6mpt582mzgX_yDASJqg7YQ"/>
+</div>
+<div>
+<p class="font-bold">Siska Pratama</p>
+<p class="text-sm text-white/60">Executive Assistant, PT Energi Nasional</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-section-gap bg-surface-container-lowest">
+<div class="max-w-4xl mx-auto px-gutter text-center">
+<h2 class="font-display-lg text-[36px] text-primary mb-stack-md">Siap Memulai Perjalanan Mewah Anda?</h2>
+<p class="font-body-lg text-on-surface-variant mb-stack-lg">Dapatkan penawaran harga khusus untuk penyewaan mingguan atau paket korporat jangka panjang.</p>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-[#25D366] text-white px-12 py-5 rounded-lg font-headline-sm flex items-center justify-center gap-3 hover:shadow-lg transition-all">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+                        WhatsApp Admin (Fast Response)
+                    </button>
+<button class="border-2 border-primary text-primary px-12 py-5 rounded-lg font-headline-sm hover:bg-primary hover:text-white transition-all">
+                        Unduh Katalog PDF
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:grid md:grid-cols-4 gap-stack-lg bg-tertiary-container border-t border-on-tertiary-fixed-variant">
+<div class="col-span-1">
+<div class="font-headline-md font-bold text-on-tertiary mb-stack-md">LuxeDrive Premium</div>
+<p class="text-on-tertiary-container font-body-md mb-stack-md">
+                Layanan penyewaan mobil mewah nomor satu di Indonesia. Mengutamakan kenyamanan, keamanan, dan prestise di setiap kilometer.
+            </p>
+<div class="flex gap-4">
+<div class="p-2 border border-on-tertiary-fixed-variant rounded flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+<span class="text-white text-xs font-bold">SSL SECURE</span>
+</div>
+</div>
+</div>
+<div>
+<h4 class="text-white font-bold mb-stack-md">Tautan Cepat</h4>
+<ul class="flex flex-col gap-2">
+<li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kebijakan Privasi</a></li>
+<li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+<li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Pusat Bantuan</a></li>
+<li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kemitraan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-stack-md">Kontak Kami</h4>
+<ul class="flex flex-col gap-2 text-on-tertiary-container">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<span>Jl. Sudirman No. 88, Jakarta Selatan, DKI Jakarta</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">call</span>
+<span>+62 21 5555 8888</span>
+</li>
+<li class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+<span>info@luxedrive.co.id</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-stack-md">Newsletter</h4>
+<p class="text-on-tertiary-container text-sm mb-4">Dapatkan info armada terbaru dan promo eksklusif.</p>
+<div class="flex">
+<input class="bg-white/5 border border-on-tertiary-fixed-variant rounded-l-lg px-4 py-2 w-full text-white focus:outline-none focus:border-secondary-fixed" placeholder="Email Anda" type="email"/>
+<button class="bg-primary-container text-white px-4 rounded-r-lg hover:bg-primary transition-colors">Kirim</button>
+</div>
+</div>
+<div class="col-span-full border-t border-on-tertiary-fixed-variant pt-stack-md text-center">
+<p class="text-on-tertiary-container text-sm">© 2024 LuxeDrive Premium Indonesia. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/yourphonenumber">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-background px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-outline-variant">
+            Butuh Bantuan? Hubungi Kami
+        </span>
+</a>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header transparency logic
+        const header = document.querySelector('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kontak | LuxeDrive Premium Indonesia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#8b8a8a",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "secondary-fixed": "#66ff8e",
+                    "on-primary-fixed-variant": "#7b2b3b",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#400012",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary-fixed": "#ffd9dd",
+                    "tertiary-container": "#232323",
+                    "on-surface": "#1a1c1c",
+                    "secondary-container": "#5dfd8a",
+                    "on-secondary-fixed-variant": "#005322",
+                    "outline": "#877274",
+                    "inverse-surface": "#2f3131",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-container": "#cf6d7c",
+                    "secondary-fixed-dim": "#3de273",
+                    "tertiary-fixed": "#e5e2e1",
+                    "outline-variant": "#dac0c2",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb2bb",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-tint": "#994251",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#007232",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#544244",
+                    "on-secondary-fixed": "#002109",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "primary": "#260008",
+                    "surface": "#f9f9f9",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "secondary": "#006d2f",
+                    "tertiary": "#0d0d0d",
+                    "primary-container": "#4c0519",
+                    "surface-container": "#eeeeee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "stack-lg": "32px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            },
+            "fontSize": {
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Hanken Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(12px); }
+        .hover-lift { transition: transform 0.3s cubic-bezier(0.165, 0.84, 0.44, 1); }
+        .hover-lift:hover { transform: translateY(-4px); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter h-20 max-w-container-max mx-auto bg-surface-container-lowest border-b border-outline-variant">
+<div class="flex items-center gap-8">
+<span class="font-display-lg text-headline-md font-bold text-primary">LuxeDrive Indonesia</span>
+<div class="hidden md:flex gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Beranda</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="katalog.html">Katalog</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="paket_wisata.html">Paket</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="tentang.html">Tentang Kami</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md text-body-md" href="contact.html">Kontak</a>
+</div>
+</div>
+<button class="bg-[#25D366] text-white px-6 py-2 rounded font-label-md text-label-md active:scale-95 transition-transform flex items-center gap-2">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+            Hubungi Admin
+        </button>
+</nav>
+<main class="pt-20">
+<!-- Hero Header -->
+<section class="relative h-[400px] flex items-center justify-center overflow-hidden bg-primary-container">
+<div class="absolute inset-0 opacity-40">
+
+</div>
+<div class="relative z-10 text-center px-gutter">
+<h1 class="font-display-lg text-display-lg text-white mb-4">Hubungi Layanan VIP Kami</h1>
+<p class="text-white/80 font-body-lg text-body-lg max-w-2xl mx-auto">Kami hadir untuk memastikan perjalanan Anda di Indonesia berjalan dengan kenyamanan dan keamanan kelas satu.</p>
+</div>
+</section>
+<!-- Contact Information Bento Grid -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter">
+<!-- Info Cards -->
+<div class="lg:col-span-4 space-y-gutter">
+<div class="p-8 border border-outline-variant bg-surface-container-lowest hover-lift rounded-lg">
+<span class="material-symbols-outlined text-primary mb-4 text-[32px]">location_on</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Kantor Pusat</h3>
+<p class="text-on-surface-variant font-body-md text-body-md leading-relaxed">
+                            LuxeDrive Building, Lt. 12<br/>
+                            Jl. Jenderal Sudirman Kav. 52-53<br/>
+                            Jakarta Selatan, 12190
+                        </p>
+</div>
+<div class="p-8 border border-outline-variant bg-surface-container-lowest hover-lift rounded-lg">
+<span class="material-symbols-outlined text-primary mb-4 text-[32px]">schedule</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">Jam Operasional</h3>
+<div class="space-y-1 text-on-surface-variant font-body-md text-body-md">
+<div class="flex justify-between"><span>Senin - Jumat:</span> <span class="font-bold">08:00 - 20:00</span></div>
+<div class="flex justify-between"><span>Sabtu - Minggu:</span> <span class="font-bold">09:00 - 17:00</span></div>
+<div class="flex justify-between"><span>Layanan VIP 24/7:</span> <span class="text-secondary font-bold">Aktif</span></div>
+</div>
+</div>
+</div>
+<!-- Main Contact Area -->
+<div class="lg:col-span-8 bg-surface-container-low border border-outline-variant p-10 rounded-lg">
+<h2 class="font-headline-md text-headline-md mb-8">Kirim Pesan Langsung</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg mb-8">
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">call</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-sm font-label-md">WhatsApp Corporate</p>
+<p class="text-primary font-bold text-headline-sm">+62 811 1234 5678</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<div>
+<p class="text-on-surface-variant text-sm font-label-md">Email Reservasi</p>
+<p class="text-primary font-bold text-headline-sm">vip@luxedrive.id</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-on-surface-variant">Nama Lengkap</label>
+<input class="bg-surface border-outline-variant focus:border-primary-container rounded-lg p-3 outline-none transition-all" placeholder="Contoh: Budi Santoso" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-on-surface-variant">Nomor Telepon</label>
+<input class="bg-surface border-outline-variant focus:border-primary-container rounded-lg p-3 outline-none transition-all" placeholder="+62..." type="tel"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-on-surface-variant">Pesan</label>
+<textarea class="bg-surface border-outline-variant focus:border-primary-container rounded-lg p-3 outline-none transition-all" placeholder="Jelaskan kebutuhan sewa Anda..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary-container text-white py-4 rounded-lg font-bold hover:bg-primary transition-colors flex items-center justify-center gap-2">
+                            Kirim Permintaan Konsultasi
+                            <span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Full Width Map Section -->
+<section class="w-full h-[500px] relative">
+<div class="absolute inset-0 bg-surface-container-high flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover grayscale opacity-80 contrast-125" data-alt="A stylized, high-contrast professional digital map of Jakarta's central business district at dusk. The map features a minimalist dark mode aesthetic with glowing gold lines representing major thoroughfares like Sudirman and Thamrin. Cinematic soft lighting from above highlights the urban grid structure, reflecting a luxury corporate atmosphere. Deep burgundy and charcoal tones define the visual style." data-location="Jakarta, Indonesia" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_rrXNlj33RgBmC5CQMUY3L8wZVn-WWoUeyjqQIcig8e7f6fW0rx-D2PgD-nE1z6pPTnJ3nz-y_lRAsypk6FP-UEscWZpF70rCcxxazk2AvCQrQriWsnENZfPlXQ4nvefJ2BqaO42E-ffj4mcgDbJdnmb0uLCdl-hqdsBggZqBAhHfw2NLBHA-ASK8yl6bq0IFurX7jO6pxMjGOlrkf5OcWSgBycCgSzCIUmxUyQrUAncnZRxijjZy"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+<!-- Interactive Map Overlay Card -->
+<div class="absolute bottom-10 left-gutter z-10 glass-card p-6 border border-outline-variant rounded-lg max-w-sm hidden md:block">
+<div class="flex items-center gap-2 mb-2 text-primary">
+<span class="material-symbols-outlined">verified</span>
+<span class="font-label-md">Verified Headquarters</span>
+</div>
+<p class="font-body-md text-on-surface mb-4">Kunjungi showroom kami untuk melihat koleksi armada premium secara langsung.</p>
+<a class="text-primary font-bold underline flex items-center gap-1" href="#">
+                    Petunjuk Arah <span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</section>
+<!-- Social Connections -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap border-t border-outline-variant">
+<div class="flex flex-col md:flex-row items-center justify-between gap-stack-lg">
+<div class="max-w-md">
+<h2 class="font-headline-md text-headline-md mb-2 text-primary">Terhubung di Media Sosial</h2>
+<p class="text-on-surface-variant font-body-md">Ikuti kami untuk update terbaru mengenai armada eksklusif dan promo perjalanan VIP.</p>
+</div>
+<div class="flex gap-4">
+<a class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-white transition-all group" href="#">
+<img alt="Instagram" class="w-6 h-6 group-hover:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI4414bxNONWeyq77NJMgEc2oJxLhdx73jmv35vxokENdAe-J4Ve2csx_LClfPOt9Hqitu_4v2-t4OqAnCLYyCQL6z4lUEHs8mamp27NrgHZFvw7Aiub2LaI6e0QhlO9mEzWyxb5T0ThDOesN-o27xGkQSyEYZDsy8aSd3XSLSz6Km-6AL51oFyGUEWUaeFUwdTLA4FeNJ8a4XxQJXkJBxSSpOu5-NMtDKkuCl4qDkFvRMU5JG8cPe"/>
+</a>
+<a class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-white transition-all group" href="#">
+<img alt="LinkedIn" class="w-6 h-6 group-hover:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAl5RNPvPZn5Pqp5JYFhx43gsb75PERQ-AloheZfoI8Tv1YwzdL_pQbN_XvR3CE7rANU0NAEsx6NGK_iEoMdQL0urWEEIqKU7Zvo9bDWMzrJEpgmM-SMzBdL-_EOtEPBLE3iHECQmhp2_kSNBsESydhNiiyqpcIBApKJyhLT61319X9l2OuUv0pLHIINKhEVXI238GOqNkdWJBpGlDI5begW9Zdd9xNHb7sRsLjh-Zs7Pp4gVJ4k-Pd"/>
+</a>
+<a class="w-16 h-16 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary-container hover:text-white transition-all group" href="#">
+<img alt="Facebook" class="w-6 h-6 group-hover:invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTYRKaEuKRpUvGxbn4CKhycQCPrGeZH4UYNqBZgPhwZupKtGPo9UvYb5-R2mB6gCGGXZ4SajgYILjrw9lhGaFxCD1xTeI1jJgTedS3hCPUm-_3HDA-EAhjhf3N2kaJ2HwgajcQ5WKrqtd6iUsPtaczDQbmRiTjjDvqFGXZVdL4_OkXiFzEL-H5JVMmggmakZrSs1K4U8PJZ-HchaFpvX5DjX_vNxJ6YZZU-dp7ycBzOrVmj5TN5bSp"/>
+</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:grid md:grid-cols-4 gap-stack-lg bg-tertiary-container text-on-tertiary-container border-t border-on-tertiary-fixed-variant">
+<div class="md:col-span-1">
+<span class="font-headline-md text-headline-md font-bold text-on-tertiary mb-4 block">LuxeDrive</span>
+<p class="font-body-md text-on-tertiary-container mb-6 max-w-xs">Penyedia layanan transportasi premium terkemuka di Indonesia sejak 2012.</p>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Navigasi</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Katalog Mobil</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Paket Wisata</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Layanan Supir</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Kemitraan</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Bantuan</h4>
+<ul class="space-y-2">
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Pusat Bantuan</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
+<li><a class="hover:text-secondary-fixed transition-colors" href="#">Kebijakan Privasi</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-white font-bold mb-4">Newsletter</h4>
+<p class="text-sm mb-4">Dapatkan penawaran eksklusif langsung di email Anda.</p>
+<div class="flex gap-2">
+<input class="bg-on-background border border-on-tertiary-fixed-variant p-2 rounded w-full outline-none focus:border-secondary-fixed" placeholder="Email Anda" type="email"/>
+<button class="bg-primary-container text-white px-4 rounded hover:bg-primary transition-colors">Daftar</button>
+</div>
+</div>
+<div class="md:col-span-4 pt-8 border-t border-on-tertiary-fixed-variant text-center">
+<p>© 2024 LuxeDrive Premium Indonesia. All Rights Reserved.</p>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-xl hover:scale-110 transition-transform active:scale-95 group" href="https://wa.me/6281112345678" target="_blank">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+<span class="absolute right-full mr-4 bg-white text-on-surface px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
+            Hubungi Konsultan VIP
+        </span>
+</a>
+<script>
+        // Smooth scroll implementation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Simple Fade In on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.hover-lift').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(el);
+        });
+    </script>
+</body></html>

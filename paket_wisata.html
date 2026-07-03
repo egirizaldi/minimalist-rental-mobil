@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+
+<html class="light" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paket Wisata &amp; Layanan VIP | LuxeDrive Indonesia</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-container": "#8b8a8a",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-secondary": "#ffffff",
+                    "on-background": "#1a1c1c",
+                    "on-tertiary-fixed": "#1b1b1c",
+                    "secondary-fixed": "#66ff8e",
+                    "on-primary-fixed-variant": "#7b2b3b",
+                    "on-error": "#ffffff",
+                    "on-primary-fixed": "#400012",
+                    "surface-dim": "#dadada",
+                    "surface-container-highest": "#e2e2e2",
+                    "primary-fixed": "#ffd9dd",
+                    "tertiary-container": "#232323",
+                    "on-surface": "#1a1c1c",
+                    "secondary-container": "#5dfd8a",
+                    "on-secondary-fixed-variant": "#005322",
+                    "outline": "#877274",
+                    "inverse-surface": "#2f3131",
+                    "surface-bright": "#f9f9f9",
+                    "on-primary-container": "#cf6d7c",
+                    "secondary-fixed-dim": "#3de273",
+                    "tertiary-fixed": "#e5e2e1",
+                    "outline-variant": "#dac0c2",
+                    "on-primary": "#ffffff",
+                    "background": "#f9f9f9",
+                    "inverse-primary": "#ffb2bb",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-tint": "#994251",
+                    "on-tertiary": "#ffffff",
+                    "on-secondary-container": "#007232",
+                    "surface-container-lowest": "#ffffff",
+                    "on-surface-variant": "#544244",
+                    "on-secondary-fixed": "#002109",
+                    "surface-container-high": "#e8e8e8",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-tertiary-fixed-variant": "#474746",
+                    "surface-variant": "#e2e2e2",
+                    "primary-fixed-dim": "#ffb2bb",
+                    "primary": "#260008",
+                    "surface": "#f9f9f9",
+                    "tertiary-fixed-dim": "#c8c6c5",
+                    "error-container": "#ffdad6",
+                    "secondary": "#006d2f",
+                    "tertiary": "#0d0d0d",
+                    "primary-container": "#4c0519",
+                    "surface-container": "#eeeeee"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "section-gap": "80px",
+                    "stack-lg": "32px",
+                    "container-max": "1280px",
+                    "gutter": "24px",
+                    "stack-md": "16px",
+                    "stack-sm": "8px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Hanken Grotesk"],
+                    "label-md": ["Hanken Grotesk"],
+                    "headline-sm": ["Hanken Grotesk"],
+                    "headline-md": ["Hanken Grotesk"],
+                    "body-md": ["Hanken Grotesk"],
+                    "body-lg": ["Hanken Grotesk"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Hanken Grotesk', sans-serif; }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .text-shadow-sm { text-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface selection:bg-primary-container selection:text-white">
+<!-- TopNavBar (Shared Component) -->
+<header class="fixed top-0 w-full z-50 bg-surface-container-lowest dark:bg-inverse-surface border-b border-outline-variant dark:border-on-tertiary-fixed-variant h-20">
+<nav class="max-w-container-max mx-auto px-gutter h-full flex justify-between items-center">
+<div class="font-display-lg text-display-lg font-bold text-primary dark:text-inverse-primary">
+                LuxeDrive Indonesia
+            </div>
+<div class="hidden md:flex items-center gap-8 h-full">
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md text-body-md" href="index.html">Beranda</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md text-body-md" href="katalog.html">Katalog</a>
+<a class="text-primary dark:text-secondary-fixed-dim font-bold border-b-2 border-primary dark:border-secondary-fixed-dim pb-1 font-body-md text-body-md" href="paket_wisata.html">Paket</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md text-body-md" href="tentang.html">Tentang Kami</a>
+<a class="text-on-surface-variant dark:text-on-tertiary-container hover:text-primary transition-colors font-body-md text-body-md" href="contact.html">Kontak</a>
+</div>
+<a class="bg-[#25D366] text-white px-6 py-2.5 rounded-lg font-label-md text-label-md flex items-center gap-2 hover:opacity-90 transition-all active:scale-95" href="https://wa.me/628123456789">
+<span class="material-symbols-outlined text-[20px]">chat</span>
+                Hubungi Admin
+            </a>
+</nav>
+</header>
+<main class="pt-20">
+<!-- Hero Section -->
+<section class="relative h-[614px] flex items-center overflow-hidden">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full bg-cover bg-center" data-alt="A cinematic wide shot of a luxury black limousine and a premium SUV parked in front of a modern Indonesian airport terminal at sunset. The lighting is warm and golden, reflecting off the polished car surfaces. The overall aesthetic is ultra-professional, clean, and exclusive, emphasizing high-end corporate travel and VIP hospitality in Indonesia." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBc6wRQoW4WlNU63HLbXAA4ERjIE3TE58-uzUUu6yQLLETHT0nUIMhqfY6CN6GnkAUjnFPFYB7eqryJUHpR6YwBa2hdXxWzbr90txixIgJjPCsmVf8MiEhOdLGvtE-KL2i9YDMvT8ZlKfbHkjtshyiU8u99Dyjgx8RLKLCCtLxv4G8DmKAvMduqESjrdJU_q4jWtzt-iLJIWVh_6iW0r6yq_FUVLn_-LaPjgxAjFjnmKCSarItlzTY7')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-primary/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-container-max mx-auto px-gutter w-full">
+<div class="max-w-2xl text-white">
+<span class="inline-block px-4 py-1 bg-primary-container text-white font-label-md text-label-md mb-stack-md rounded-full">Layanan Eksklusif</span>
+<h1 class="font-display-lg text-display-lg font-extrabold mb-stack-md leading-tight">Paket Wisata &amp; Layanan VIP</h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-lg mb-stack-lg">Nikmati kenyamanan perjalanan tanpa kompromi dengan armada premium dan layanan pramumudi profesional untuk setiap kebutuhan perjalanan Anda di Indonesia.</p>
+</div>
+</div>
+</section>
+<!-- Main Package Grid -->
+<section class="py-section-gap max-w-container-max mx-auto px-gutter">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-stack-lg gap-stack-md">
+<div>
+<h2 class="font-headline-md text-headline-md text-primary mb-2">Pilihan Paket Eksklusif</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Dirancang khusus untuk kenyamanan dan prestise maksimal.</p>
+</div>
+<div class="flex gap-stack-sm">
+<button class="px-4 py-2 border border-outline text-primary font-label-md text-label-md rounded hover:bg-surface-container-low transition-all">Semua</button>
+<button class="px-4 py-2 text-on-surface-variant font-label-md text-label-md rounded hover:bg-surface-container-low transition-all">Bisnis</button>
+<button class="px-4 py-2 text-on-surface-variant font-label-md text-label-md rounded hover:bg-surface-container-low transition-all">Wisata</button>
+<button class="px-4 py-2 text-on-surface-variant font-label-md text-label-md rounded hover:bg-surface-container-low transition-all">Wedding</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<!-- Package Card: Wedding Car -->
+<div class="group bg-surface-container-lowest border border-outline-variant hover:shadow-lg transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A pristine white luxury sedan decorated with elegant floral arrangements on the hood, parked in front of a colonial-style Indonesian wedding venue. The lighting is bright and ethereal, suggesting a high-end celebration. The car looks immaculate, reflecting a professional and prestigious service for a dream wedding." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA-4rbS5tyVpp8WFNC2nVBRH92d4kfNVauInaNYWOtDjlAKaojqhh6cFgEmiGM1zkvBf_WOxA8WUd12Px4ciVW4plEG4dplfCeEh3hRA8xhmglDAoRivENwhxjTJvKyUKYEQO5uHKGFV5QEDJmpb3LdpHWEuCfDPErR9ud1OYDUfNBD9GcCTycF5u_A-v5pSIOE3eKle7TGrjLNPSDvM29rsZtKTXAbg7AQMJRAYzO9OGKHGfY0yyxb')"></div>
+<div class="absolute top-4 right-4 px-3 py-1 bg-primary text-white font-label-md text-label-md">Best Seller</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Wedding Car Exclusive</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Layanan mobil pengantin mewah dengan dekorasi elegan dan driver profesional berseragam untuk hari istimewa Anda.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">schedule</span>
+<span class="font-body-md text-body-md">Durasi: 12 Jam</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">person_check</span>
+<span class="font-body-md text-body-md">Driver VIP (Berseragam)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">local_gas_station</span>
+<span class="font-body-md text-body-md">Termasuk BBM &amp; Dekorasi Standard</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary-container text-primary-container font-label-md text-label-md hover:bg-primary-container hover:text-white transition-all flex justify-center items-center gap-2">
+                            Lihat Detail Paket
+                        </button>
+</div>
+</div>
+<!-- Package Card: Corporate VIP -->
+<div class="group bg-surface-container-lowest border border-outline-variant hover:shadow-lg transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A sophisticated black executive SUV parked in the central business district of Jakarta, surrounded by sleek glass skyscrapers. The image uses a cool, professional color palette with high contrast. A chauffeur in a suit stands discreetly nearby, embodying the authority and trust of a premier corporate transportation service." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAG4jUAKEDscl4hQnS3uIEhvcLuzpiZqaK4K3QEsiChnrT2iW6q-cLgGAfi8wtZp5c3FgCB57-UntRLXEhu485vQWK5ucwK-m3DnBbGf43EhGJkjGuuwQryCzVGQIrCCZFE5ods_rDzebzTf0kYO8EGodfp5Y0U6ON8ROL5zIc2HiWEEeU5dIRYLn_g0HSGOOUv-GH3S5T1pN4eyxMOHtHr4E-bQL7urk9NxHd3IrVd2usFn8ggPwPy')"></div>
+<div class="absolute top-4 right-4 px-3 py-1 bg-secondary text-white font-label-md text-label-md">Priority</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Corporate VIP Travel</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Solusi mobilitas untuk eksekutif dan tamu VVIP. Menjamin ketepatan waktu, privasi, dan profesionalisme tingkat tinggi.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">history</span>
+<span class="font-body-md text-body-md">Durasi: Full Day (Flexible)</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">workspace_premium</span>
+<span class="font-body-md text-body-md">Protokol Keamanan &amp; Privasi</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">coffee</span>
+<span class="font-body-md text-body-md">Refreshments &amp; High-Speed WiFi</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary-container text-primary-container font-label-md text-label-md hover:bg-primary-container hover:text-white transition-all flex justify-center items-center gap-2">
+                            Lihat Detail Paket
+                        </button>
+</div>
+</div>
+<!-- Package Card: Holiday Tours -->
+<div class="group bg-surface-container-lowest border border-outline-variant hover:shadow-lg transition-all duration-300">
+<div class="relative h-64 overflow-hidden">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-500" data-alt="A premium luxury van driving through a lush tropical landscape in Bali, with tiered rice terraces and palm trees in the background. The lighting is soft and natural, emphasizing comfort and relaxation. The image captures the essence of a high-end holiday tour where the journey is as beautiful as the destination." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCPhGRsXsKlpBeId6AZhoSiZq90ga2Vb2OOGFEncvJY_hWcbIBOTwbYKFs6EA18akahZKIWR2Cc5YE5QWqr0_EBnwxgFBL5c7VqTf-ZSQ87Ohe5o6-AEExu4n7EOn-Z_IiOb5LM1GHx_5ERjVXKzr1cLHwZCf1UEHRXP7LgVn9AbADW0OuJoGg70w9Rq_x6Gd383peEdNTzzTXNjGYYa56M3bqN33Z20RsIiLPWjA3xdP3W9IxmfbJu')"></div>
+<div class="absolute top-4 right-4 px-3 py-1 bg-on-primary-container text-white font-label-md text-label-md">Popular</div>
+</div>
+<div class="p-6">
+<h3 class="font-headline-sm text-headline-sm text-primary mb-2">Holiday Tours (Bali/Yogya)</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6 line-clamp-2">Eksplorasi destinasi wisata terbaik Indonesia dengan kenyamanan armada terbaru dan driver sebagai guide lokal.</p>
+<div class="space-y-3 mb-8">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">calendar_today</span>
+<span class="font-body-md text-body-md">Paket 3 Hari / 5 Hari</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">map</span>
+<span class="font-body-md text-body-md">Custom Itinerary &amp; Guide</span>
+</div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]">luggage</span>
+<span class="font-body-md text-body-md">Termasuk Driver, BBM, &amp; Parkir</span>
+</div>
+</div>
+<button class="w-full py-3 border border-primary-container text-primary-container font-label-md text-label-md hover:bg-primary-container hover:text-white transition-all flex justify-center items-center gap-2">
+                            Lihat Detail Paket
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-primary text-white py-20">
+<div class="max-w-container-max mx-auto px-gutter text-center">
+<h2 class="font-display-lg text-display-lg font-bold mb-stack-md">Siap Untuk Perjalanan VIP Anda?</h2>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto mb-stack-lg">Konsultasikan kebutuhan perjalanan Anda dengan tim admin kami. Kami siap melayani permintaan khusus untuk pengalaman yang tak terlupakan.</p>
+<a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-lg font-headline-sm text-headline-sm hover:scale-105 transition-transform" href="https://wa.me/628123456789">
+<span class="material-symbols-outlined text-[28px]">chat</span>
+                    Pesan Paket Sekarang
+                </a>
+</div>
+</section>
+<!-- Testimonial Bento -->
+<section class="py-section-gap max-w-container-max mx-auto px-gutter">
+<h2 class="font-headline-md text-headline-md text-primary text-center mb-12">Apa Kata Klien Kami</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<div class="flex gap-1 mb-4 text-[#FFD700]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Layanan Wedding Car yang sangat luar biasa. Mobil sangat bersih dan driver datang 30 menit lebih awal. Sangat merekomendasikan LuxeDrive!"</p>
+<div class="font-label-md text-label-md text-primary">— Ibu Sarah, Jakarta</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<div class="flex gap-1 mb-4 text-[#FFD700]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Armada Alphard-nya sangat terawat. Kami menggunakan jasa VIP Travel untuk kunjungan direksi dari luar negeri, sangat profesional."</p>
+<div class="font-label-md text-label-md text-primary">— Bpk. Hartono, PT. Maju Jaya</div>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl border border-outline-variant">
+<div class="flex gap-1 mb-4 text-[#FFD700]">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mb-6">"Tour Bali jadi jauh lebih nyaman dengan LuxeDrive. Driver sangat paham rute dan tempat makan terbaik yang bukan jebakan turis."</p>
+<div class="font-label-md text-label-md text-primary">— Bpk. Andre, Surabaya</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full py-section-gap px-gutter bg-tertiary-container dark:bg-on-background border-t border-on-tertiary-fixed-variant">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+<div class="col-span-1 md:col-span-1">
+<div class="font-headline-md text-headline-md font-bold text-on-tertiary mb-stack-md">LuxeDrive</div>
+<p class="font-body-md text-body-md text-on-tertiary-container">Penyedia layanan transportasi premium terdepan di Indonesia dengan fokus pada keamanan, kenyamanan, dan prestise.</p>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Layanan</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Sewa Mobil Mewah</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Wedding Car</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">VIP Corporate</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Airport Transfer</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Perusahaan</h4>
+<ul class="space-y-2">
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Tentang Kami</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kemitraan</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Pusat Bantuan</a></li>
+<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kontak</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-label-md text-label-md text-white mb-stack-md uppercase tracking-wider">Lokasi</h4>
+<p class="font-body-md text-body-md text-on-tertiary-container mb-4">Jl. Sudirman Kav. 52, Jakarta Selatan, Indonesia 12190</p>
+<div class="flex gap-4">
+<a class="text-on-tertiary-container hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">public</span></a>
+<a class="text-on-tertiary-container hover:text-white transition-colors" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+</div>
+</div>
+</div>
+<div class="max-w-container-max mx-auto mt-20 pt-8 border-t border-on-tertiary-fixed-variant flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="font-body-md text-body-md text-on-tertiary-container text-center md:text-left">© 2024 LuxeDrive Premium Indonesia. All Rights Reserved.</p>
+<div class="flex gap-6">
+<a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Kebijakan Privasi</a>
+<a class="font-body-md text-body-md text-on-tertiary-container hover:text-white transition-colors" href="#">Syarat &amp; Ketentuan</a>
+</div>
+</div>
+</footer>
+<!-- Floating WhatsApp Button -->
+<a class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 active:scale-95 transition-all duration-300 group" href="https://wa.me/628123456789">
+<span class="material-symbols-outlined text-[32px]">chat</span>
+<span class="absolute right-full mr-4 bg-white text-primary px-4 py-2 rounded-lg font-label-md text-label-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Hubungi Admin Kami</span>
+</a>
+<script>
+        // Simple scroll effect for navbar
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 20) {
+                header.classList.add('shadow-md');
+                header.classList.remove('h-20');
+                header.classList.add('h-16');
+            } else {
+                header.classList.remove('shadow-md');
+                header.classList.add('h-20');
+                header.classList.remove('h-16');
+            }
+        });
+    </script>
+</body></html>
