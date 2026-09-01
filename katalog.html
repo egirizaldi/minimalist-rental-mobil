@@ -1,461 +1,363 @@
 <!DOCTYPE html>
-
-<html class="light" lang="id"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Katalog Armada | LuxeDrive Indonesia</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-tertiary-container": "#8b8a8a",
-                    "inverse-on-surface": "#f0f1f1",
-                    "on-secondary": "#ffffff",
-                    "on-background": "#1a1c1c",
-                    "on-tertiary-fixed": "#1b1b1c",
-                    "secondary-fixed": "#66ff8e",
-                    "on-primary-fixed-variant": "#7b2b3b",
-                    "on-error": "#ffffff",
-                    "on-primary-fixed": "#400012",
-                    "surface-dim": "#dadada",
-                    "surface-container-highest": "#e2e2e2",
-                    "primary-fixed": "#ffd9dd",
-                    "tertiary-container": "#232323",
-                    "on-surface": "#1a1c1c",
-                    "secondary-container": "#5dfd8a",
-                    "on-secondary-fixed-variant": "#005322",
-                    "outline": "#877274",
-                    "inverse-surface": "#2f3131",
-                    "surface-bright": "#f9f9f9",
-                    "on-primary-container": "#cf6d7c",
-                    "secondary-fixed-dim": "#3de273",
-                    "tertiary-fixed": "#e5e2e1",
-                    "outline-variant": "#dac0c2",
-                    "on-primary": "#ffffff",
-                    "background": "#f9f9f9",
-                    "inverse-primary": "#ffb2bb",
-                    "surface-container-low": "#f3f3f3",
-                    "surface-tint": "#994251",
-                    "on-tertiary": "#ffffff",
-                    "on-secondary-container": "#007232",
-                    "surface-container-lowest": "#ffffff",
-                    "on-surface-variant": "#544244",
-                    "on-secondary-fixed": "#002109",
-                    "surface-container-high": "#e8e8e8",
-                    "error": "#ba1a1a",
-                    "on-error-container": "#93000a",
-                    "on-tertiary-fixed-variant": "#474746",
-                    "surface-variant": "#e2e2e2",
-                    "primary-fixed-dim": "#ffb2bb",
-                    "primary": "#260008",
-                    "surface": "#f9f9f9",
-                    "tertiary-fixed-dim": "#c8c6c5",
-                    "error-container": "#ffdad6",
-                    "secondary": "#006d2f",
-                    "tertiary": "#0d0d0d",
-                    "primary-container": "#4c0519",
-                    "surface-container": "#eeeeee"
-            },
-            "borderRadius": {
-                    "DEFAULT": "0.125rem",
-                    "lg": "0.25rem",
-                    "xl": "0.5rem",
-                    "full": "0.75rem"
-            },
-            "spacing": {
-                    "margin-mobile": "16px",
-                    "section-gap": "80px",
-                    "stack-lg": "32px",
-                    "container-max": "1280px",
-                    "gutter": "24px",
-                    "stack-md": "16px",
-                    "stack-sm": "8px"
-            },
-            "fontFamily": {
-                    "display-lg-mobile": ["Hanken Grotesk"],
-                    "label-md": ["Hanken Grotesk"],
-                    "headline-sm": ["Hanken Grotesk"],
-                    "headline-md": ["Hanken Grotesk"],
-                    "body-md": ["Hanken Grotesk"],
-                    "display-lg": ["Hanken Grotesk"],
-                    "body-lg": ["Hanken Grotesk"]
-            },
-            "fontSize": {
-                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
-                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
-                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
-                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
-                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
-                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
-            }
-          },
-        },
-      }
-    </script>
-<style>
-        body {
-            font-family: 'Hanken Grotesk', sans-serif;
-            background-color: #f9f9f9;
-        }
-        .material-symbols-outlined {
-            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-        }
-        .luxury-card-hover:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
-        }
-    </style>
+<html class="light" lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Katalog Armada | LuxeDrive Indonesia</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="assets/tailwind-config.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body class="text-on-surface">
-<!-- TopNavBar -->
-<header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant h-20">
-<div class="max-w-container-max mx-auto px-gutter h-full flex justify-between items-center">
-<div class="font-display-lg text-display-lg font-bold text-primary">LuxeDrive Indonesia</div>
-<nav class="hidden md:flex gap-8">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Beranda</a>
-<a class="font-body-md text-body-md text-primary font-bold border-b-2 border-primary pb-1" href="katalog.html">Katalog</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="paket_wisata.html">Paket</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="tentang.html">Tentang Kami</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="contact.html">Kontak</a>
-</nav>
-<button class="bg-[#25D366] text-white px-6 py-2 rounded-lg font-label-md text-label-md transition-transform active:scale-95">
-                Hubungi Admin
-            </button>
-</div>
-</header>
-<main class="pt-32 pb-section-gap">
-<div class="max-w-container-max mx-auto px-gutter">
-<!-- Header Section -->
-<div class="mb-stack-lg border-l-4 border-primary pl-6">
-<h1 class="font-display-lg text-display-lg text-primary mb-2">Katalog Armada Eksklusif Kami</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">Pilih kendaraan terbaik untuk perjalanan bisnis, acara kenegaraan, atau kenyamanan keluarga Anda dengan standar pelayanan VIP.</p>
-</div>
-<!-- Filter Section -->
-<div class="flex flex-wrap items-center gap-4 mb-stack-lg border-y border-outline-variant py-6">
-<span class="font-label-md text-label-md text-primary uppercase tracking-widest mr-2">Filter Kategori:</span>
-<button class="px-6 py-2 rounded-full border border-primary bg-primary text-white font-label-md text-label-md transition-all">Semua Armada</button>
-<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-all">MPV Luxury</button>
-<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-all">Sedan Executive</button>
-<button class="px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md text-label-md transition-all">SUV Premium</button>
-</div>
-<!-- Fleet Grid -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Card: Toyota Alphard -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A pristine white Toyota Alphard luxury MPV parked in front of a modern minimalist corporate building at sunset. The lighting is soft and golden, highlighting the vehicle's chrome accents and sleek lines. High-end automotive photography style, professional studio lighting, 8k resolution, elegant atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCH_sP-y4c677-zi0zhq5shtpABsfAHTRJ5ay5gD7yXykSScfZlpQxifCd9h29MEUteVcYtCo_ptnFE2I-o83I9Looe-0SF-u1pwCqlTntuPBJDrOuFolldspO44ABL5Hwzv1AqV6tRzK7Y8eLUjQZsMMiDhLrY3OhK6OMt9BrOnJJeBVFholaFF91_yT_bHjypyO4sHbY_6B7i2rhAXmv3RBZm9_4LVwBc04h3AR_iUVOnty4J7l4J"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">MPV Luxury</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Toyota Alphard Gen-4</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">6 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">check_circle</span>
-<span class="font-body-md text-body-md">Chauffeur Inc.</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">ev_station</span>
-<span class="font-body-md text-body-md">Bensin</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 2.800.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-<!-- Card: Mercedes-Benz S-Class -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A sleek black Mercedes-Benz S-Class executive sedan captured in a high-contrast urban environment at night. The city lights reflect off the polished obsidian paint. Cinematic automotive photography, premium luxury aesthetic, sharp focus on the emblem and headlights, deep blacks and silver accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe64jkX5IE8uxsss3oJzsvc4QesZjVz3Y__YjItOmObIhLU-Rp1a_O2yKvyBh8wa5bgfR7-nytRqb3tI6f7SCk0Y-kioNnQ6O7-xmXpIOoh6xFKfcBvof7XVOoMmhhRzz_rKjUBZzaddzN7syWUxanBM5m5nK8w3bVi3uXMOmo6kwfoxirOWJMWhW7013YXTm1GxJC4P48W3gG5bRXedw_k4Lp8LTlnxrTBy2eMNkOPZDvJL3amCmg"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Mercedes-Benz S 450</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">4 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">workspace_premium</span>
-<span class="font-body-md text-body-md">VIP Service</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
-<span class="font-body-md text-body-md">Bensin</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 7.500.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-<!-- Card: BMW 7 Series -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A dark blue BMW 7 Series sedan showcase in a clean, brightly lit professional automotive studio. The lighting creates elegant gradients on the car's bodywork. Ultra-minimalist background, soft shadows, high-end commercial car photography, focus on precision and engineering excellence." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyDXXzj1nm6D4gr-4me1sahwzX_VDImAAWYOI7CyujvsKMDB72zA3eYscpe2Slv1OoZzcvrLmLpg3txMGucxMuCvhvc2heMPigV42SvdNNB0Qz2wZ-rYgnS_yPKnvbHoIJ3tzrjU4r1SZ2lRtyGjAviFetN56vWrkS-thwzKkaQo4VOicZp7Zh-Kb7rOJv83VukvrWGUXhk913LvokkacSKVuq_q3fo8MKd__xba2QibUJ0ofrPXwm"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">BMW 730Li M Sport</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">4 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">security</span>
-<span class="font-body-md text-body-md">Kaca Film V-Kool</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">local_gas_station</span>
-<span class="font-body-md text-body-md">Bensin</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 6.200.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-<!-- Card: Toyota Vellfire -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A jet black Toyota Vellfire luxury MPV being driven through a high-end commercial district in Jakarta at dusk. The building lights are blurred in the background, creating a sense of dynamic motion. Professional car commercial style, luxurious dark tones, polished surfaces reflecting the city lights." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFEoOEb80TJiQnL0k1tSmyPiUDgwWMoMeySSUTH2I7iG9vGz0sodf7fWBCm3vf49rkfJF-sfCLtDvUn3WMSYIp6dfN-dZohgAYgbksmQe0w_MqDXJPNhmb8mLlfe57iE7p-5JUEZlbTBT61K_lHMuea7YYS0SSavl0XAMW19go7v63lBCXz08mnf7rkXhNIeeom7kGSGypK4HrsKyGKB5yB14ezgXda6WrlkZG0MWkKwAsVK3xXzAf"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">MPV Luxury</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Toyota Vellfire HEV</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">6 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">bolt</span>
-<span class="font-body-md text-body-md">Hybrid Tech</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span>
-<span class="font-body-md text-body-md">Pilot Seat</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 3.100.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-<!-- Card: Toyota Camry -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A silver Toyota Camry executive sedan parked at the entrance of a luxury 5-star hotel. A uniformed doorman is visible in the background. High-key lighting, clean professional photography, morning sunlight, focus on the car's front grille and elegant profile." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMLzimslCBOX3q9qKxiPfSM2lXi2_9ZQcDV4xGFyu23z6kvxuU9yXxb3lY8QWWOkLYhvu46tGAPaUis5lVpp6q6Ig1g2rVXdjY7mYcEXWLiMpAG2ZR5gYceHWV2zExSjBeDjIhGcRD55fJKjbUwSPR1GNmR52U6t8wd4djEz-teYo8rXHKpU4x8J0EQfEUiVQFur6fJ2Cnq9wwOQYGxXc4WZXY6UlPu5U5pgVW8GxhOueE-sagWRIL"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Toyota Camry Hybrid</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">4 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">eco</span>
-<span class="font-body-md text-body-md">Ramah Lingkungan</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">privacy_tip</span>
-<span class="font-body-md text-body-md">Privasi Terjamin</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 1.800.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-<!-- Card: Land Cruiser -->
-<div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
-<div class="relative h-64 overflow-hidden">
-<img class="w-full h-full object-cover" data-alt="A powerful Toyota Land Cruiser 300 in black metallic finish, parked on a clean paved road with mountains in the far distance under a clear blue sky. Rugged yet premium aesthetic, sharp sunlight, architectural lighting on the vehicle's body, professional travel photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBCwa-HIp7TngpEBAub5QP_JDZ9fm0JNDROR0Sq6qy5T04GiQgSi8Toq4F2AQzQCVSBYkWKA9kzDVUQ6ppwcg5OavHuIUCEeOy3pWqytsjKggGC-ghfV0pJh_vgKvP8a1y-kGklO9NcXrtUdOMyc-55uNvS0W_c5pFb_lFSqWm84c5V2KJSiWZb75X3L2Q9VTNK97DJl_uBJbDsBDRkUmoZDCN3NpqAtJQInRuLIOwTh9tKh73z7rSy"/>
-<div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">SUV Premium</div>
-</div>
-<div class="p-6 flex-grow">
-<h3 class="font-headline-md text-headline-md text-primary mb-4">Toyota Land Cruiser 300</h3>
-<div class="grid grid-cols-2 gap-y-3 mb-6">
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">person</span>
-<span class="font-body-md text-body-md">5 Penumpang</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">settings</span>
-<span class="font-body-md text-body-md">Automatic</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">terrain</span>
-<span class="font-body-md text-body-md">All-Terrain VIP</span>
-</div>
-<div class="flex items-center gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">shield</span>
-<span class="font-body-md text-body-md">Armor Optional</span>
-</div>
-</div>
-<div class="pt-6 border-t border-outline-variant flex justify-between items-end">
-<div>
-<p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
-<p class="font-headline-sm text-headline-sm text-primary">Rp 8.500.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
-</div>
-</div>
-</div>
-<div class="p-6 pt-0">
-<a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md text-label-md hover:brightness-110 transition-all" href="#">
-<span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
-                        </a>
-</div>
-</div>
-</div>
-</div>
-</main>
-<!-- Floating WhatsApp Button -->
-<a aria-label="WhatsApp Admin" class="fixed bottom-8 right-8 z-[60] bg-[#25D366] text-white w-16 h-16 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-transform active:scale-90" href="https://wa.me/628123456789">
-<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
-<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.417-.003 6.557-5.338 11.892-11.893 11.892-1.997-.001-3.951-.5-5.688-1.448l-6.305 1.652zm6.599-3.835c1.406.836 2.964 1.277 4.564 1.278 4.877 0 8.846-3.969 8.848-8.846.001-2.361-.92-4.581-2.595-6.255s-3.895-2.595-6.255-2.597c-4.878 0-8.847 3.97-8.849 8.848-.001 1.702.483 3.362 1.396 4.8l-.204.746-.745 2.721 2.787-.731.748.436zm11.306-6.126c-.3-.15-1.774-.875-2.048-.976-.275-.1-.475-.15-.674.15-.199.3-.774.976-.949 1.176-.175.2-.35.225-.65.075-.3-.15-1.266-.467-2.411-1.488-.891-.795-1.492-1.776-1.667-2.076-.175-.3-.019-.463.13-.612.134-.133.3-.35.45-.525.15-.175.2-.3.3-.5s.05-.375-.025-.525c-.075-.15-.674-1.624-.924-2.224-.244-.589-.493-.51-.674-.519-.175-.009-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.026-1.05 2.501 0 1.475 1.075 2.899 1.225 3.1 1.5 1.95 1.996 1.848 1.5 2.148.15.3.3.3.3.3.3 0 .825-.05 1.575-.124.275.125.6.35.8.3.175.25.15.55.075s-.3-.15-.45-.3z"></path>
-</svg>
-</a>
-<!-- Footer -->
-<footer class="w-full py-section-gap px-gutter flex flex-col md:grid md:grid-cols-4 gap-stack-lg bg-tertiary-container border-t border-on-tertiary-fixed-variant">
-<div class="col-span-1">
-<div class="font-headline-md text-headline-md font-bold text-on-tertiary mb-6">LuxeDrive</div>
-<p class="font-body-md text-body-md text-on-tertiary-container">Layanan sewa mobil premium terdepan di Indonesia, menghadirkan kenyamanan dan kelas tersendiri untuk setiap perjalanan Anda.</p>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-label-md text-secondary-fixed mb-6 uppercase tracking-widest">Tautan Cepat</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Tentang Kami</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Katalog Armada</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Paket Sewa</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kontak</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-label-md text-secondary-fixed mb-6 uppercase tracking-widest">Bantuan</h4>
-<ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Pusat Bantuan</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kebijakan Privasi</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Syarat &amp; Ketentuan</a></li>
-<li><a class="font-body-md text-body-md text-on-tertiary-container hover:text-on-tertiary transition-colors" href="#">Kemitraan</a></li>
-</ul>
-</div>
-<div class="col-span-1">
-<h4 class="font-label-md text-label-md text-secondary-fixed mb-6 uppercase tracking-widest">Kantor Pusat</h4>
-<p class="font-body-md text-body-md text-on-tertiary-container mb-4">
-                Sudirman Central Business District (SCBD)<br/>
-                Lot 11A, Jl. Jend. Sudirman Kav 52-53<br/>
-                Jakarta Selatan, 12190
-            </p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-on-tertiary">face_nod</span>
-<span class="material-symbols-outlined text-on-tertiary">photo_camera</span>
-<span class="material-symbols-outlined text-on-tertiary">alternate_email</span>
-</div>
-</div>
-<div class="col-span-4 pt-12 border-t border-on-tertiary-fixed-variant flex justify-between items-center">
-<p class="font-body-md text-body-md text-on-tertiary-container">© 2024 LuxeDrive Premium Indonesia. All Rights Reserved.</p>
-<div class="flex gap-4">
-<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">payments</span>
-<span class="material-symbols-outlined text-on-tertiary-container text-[20px]">verified_user</span>
-</div>
-</div>
-</footer>
-<script>
-        // Simple Micro-interactions
-        document.querySelectorAll('a, button').forEach(elem => {
-            elem.addEventListener('click', function(e) {
-                if (this.getAttribute('href') === '#') {
-                    e.preventDefault();
-                }
-            });
-        });
 
-        // Filter button functionality
-        const filterButtons = document.querySelectorAll('.filter-btn');
-        filterButtons.forEach(btn => {
-            btn.addEventListener('click', () => {
-                filterButtons.forEach(b => {
-                    b.classList.remove('bg-primary', 'text-white');
-                    b.classList.add('border-outline', 'text-on-surface-variant');
-                });
-                btn.classList.remove('border-outline', 'text-on-surface-variant');
-                btn.classList.add('bg-primary', 'text-white');
-            });
-        });
-    </script>
-</body></html>
+  <!-- Header -->
+  <header class="fixed top-0 w-full z-50 bg-surface-container-lowest border-b border-outline-variant h-20">
+    <div class="max-w-container-max mx-auto px-gutter h-full flex justify-between items-center">
+      <a href="index.html" class="font-display-lg text-headline-md font-bold text-primary">LuxeDrive Indonesia</a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="index.html">Beranda</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-1 font-body-md" href="katalog.html">Katalog</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="paket_wisata.html">Paket</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="tentang.html">Tentang Kami</a>
+        <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="contact.html">Kontak</a>
+      </nav>
+      <div class="flex items-center gap-4">
+        <a class="hidden sm:flex bg-[#25D366] text-white px-6 py-2.5 rounded-lg font-label-md items-center gap-2 hover:opacity-90 active:scale-95 transition-all" href="https://wa.me/6281112345678">
+          <span class="material-symbols-outlined text-[20px]">chat</span>
+          Hubungi Admin
+        </a>
+        <button class="hamburger md:hidden" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav md:hidden">
+    <a href="index.html">Beranda</a>
+    <a href="katalog.html" class="active">Katalog</a>
+    <a href="paket_wisata.html">Paket</a>
+    <a href="tentang.html">Tentang Kami</a>
+    <a href="contact.html">Kontak</a>
+    <a href="https://wa.me/6281112345678" class="flex items-center gap-2 text-[#25D366] font-bold">
+      <span class="material-symbols-outlined text-[20px]">chat</span> Hubungi Admin
+    </a>
+  </div>
+
+  <main class="pt-32 pb-section-gap">
+    <div class="max-w-container-max mx-auto px-gutter">
+      <!-- Header Section -->
+      <div class="mb-stack-lg border-l-4 border-primary pl-6">
+        <h1 class="font-display-lg text-display-lg text-primary mb-2">Katalog Armada Eksklusif Kami</h1>
+        <p class="font-body-lg text-on-surface-variant max-w-2xl">Pilih kendaraan terbaik untuk perjalanan bisnis, acara kenegaraan, atau kenyamanan keluarga Anda dengan standar pelayanan VIP.</p>
+      </div>
+
+      <!-- Filter Section -->
+      <div class="flex flex-wrap items-center gap-4 mb-stack-lg border-y border-outline-variant py-6">
+        <span class="font-label-md text-primary uppercase tracking-widest mr-2">Filter Kategori:</span>
+        <button class="filter-btn px-6 py-2 rounded-full border border-primary bg-primary text-white font-label-md transition-all">Semua Armada</button>
+        <button class="filter-btn px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md transition-all">MPV Luxury</button>
+        <button class="filter-btn px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md transition-all">Sedan Executive</button>
+        <button class="filter-btn px-6 py-2 rounded-full border border-outline text-on-surface-variant hover:bg-surface-container-low font-label-md transition-all">SUV Premium</button>
+      </div>
+
+      <!-- Fleet Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Card: Toyota Alphard -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-alphard.jpg" alt="Toyota Alphard Gen-4"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">MPV Luxury</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">Toyota Alphard Gen-4</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">6 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">check_circle</span>
+                <span class="font-body-md">Chauffeur Inc.</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">ev_station</span>
+                <span class="font-body-md">Bensin</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 2.800.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+
+        <!-- Card: Mercedes-Benz S-Class -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-mercedes.jpg" alt="Mercedes-Benz S 450"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">Mercedes-Benz S 450</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">4 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">workspace_premium</span>
+                <span class="font-body-md">VIP Service</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+                <span class="font-body-md">Bensin</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 7.500.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+
+        <!-- Card: BMW 7 Series -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-bmw.jpg" alt="BMW 730Li M Sport"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">BMW 730Li M Sport</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">4 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">security</span>
+                <span class="font-body-md">Kaca Film V-Kool</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">local_gas_station</span>
+                <span class="font-body-md">Bensin</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 6.200.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+
+        <!-- Card: Toyota Vellfire -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-vellfire.jpg" alt="Toyota Vellfire HEV"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">MPV Luxury</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">Toyota Vellfire HEV</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">6 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">bolt</span>
+                <span class="font-body-md">Hybrid Tech</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">airline_seat_recline_extra</span>
+                <span class="font-body-md">Pilot Seat</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 3.100.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+
+        <!-- Card: Toyota Camry -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-camry.jpg" alt="Toyota Camry Hybrid"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">Sedan Executive</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">Toyota Camry Hybrid</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">4 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">eco</span>
+                <span class="font-body-md">Ramah Lingkungan</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">privacy_tip</span>
+                <span class="font-body-md">Privasi Terjamin</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 1.800.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+
+        <!-- Card: Land Cruiser -->
+        <div class="bg-white border border-outline-variant overflow-hidden luxury-card-hover transition-all flex flex-col">
+          <div class="relative h-64 overflow-hidden">
+            <img class="w-full h-full object-cover" src="assets/images/katalog-landcruiser.jpg" alt="Toyota Land Cruiser 300"/>
+            <div class="absolute top-4 left-4 bg-primary-container text-white px-3 py-1 rounded-sm font-label-md text-[12px] uppercase">SUV Premium</div>
+          </div>
+          <div class="p-6 flex-grow">
+            <h3 class="font-headline-md text-primary mb-4">Toyota Land Cruiser 300</h3>
+            <div class="grid grid-cols-2 gap-y-3 mb-6">
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">person</span>
+                <span class="font-body-md">5 Penumpang</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">settings</span>
+                <span class="font-body-md">Automatic</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">terrain</span>
+                <span class="font-body-md">All-Terrain VIP</span>
+              </div>
+              <div class="flex items-center gap-2 text-on-surface-variant">
+                <span class="material-symbols-outlined text-[20px]">shield</span>
+                <span class="font-body-md">Armor Optional</span>
+              </div>
+            </div>
+            <div class="pt-6 border-t border-outline-variant">
+              <p class="text-[12px] text-on-tertiary-container uppercase font-bold mb-1">Mulai Dari</p>
+              <p class="font-headline-sm text-primary">Rp 8.500.000 <span class="text-body-md font-normal text-on-surface-variant">/ 12 Jam</span></p>
+            </div>
+          </div>
+          <div class="p-6 pt-0">
+            <a class="w-full bg-[#25D366] text-white flex items-center justify-center gap-3 py-4 font-label-md hover:brightness-110 transition-all" href="https://wa.me/6281112345678">
+              <span class="material-symbols-outlined">chat</span> Cek Ketersediaan via WA
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="w-full py-section-gap px-gutter bg-tertiary-container border-t border-on-tertiary-fixed-variant">
+    <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-4 gap-stack-lg">
+      <div>
+        <div class="font-headline-md font-bold text-on-tertiary mb-stack-md">LuxeDrive Premium</div>
+        <p class="text-on-tertiary-container font-body-md mb-stack-md">Layanan penyewaan mobil mewah nomor satu di Indonesia. Mengutamakan kenyamanan, keamanan, dan prestise di setiap kilometer.</p>
+        <div class="flex gap-4">
+          <div class="p-2 border border-on-tertiary-fixed-variant rounded flex items-center gap-2">
+            <span class="material-symbols-outlined text-secondary-fixed text-[18px]" style="font-variation-settings: 'FILL' 1;">verified</span>
+            <span class="text-white text-xs font-bold">SSL SECURE</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-stack-md">Tautan Cepat</h4>
+        <ul class="flex flex-col gap-2">
+          <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="tentang.html">Tentang Kami</a></li>
+          <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="katalog.html">Katalog Armada</a></li>
+          <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="paket_wisata.html">Paket Sewa</a></li>
+          <li><a class="text-on-tertiary-container hover:text-on-tertiary transition-colors" href="contact.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-stack-md">Kontak Kami</h4>
+        <ul class="flex flex-col gap-2 text-on-tertiary-container">
+          <li class="flex items-start gap-2">
+            <span class="material-symbols-outlined text-[18px]">location_on</span>
+            <span>Jl. Sudirman Kav. 52-53, Jakarta Selatan, 12190</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">call</span>
+            <span>+62 811 1234 5678</span>
+          </li>
+          <li class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-[18px]">mail</span>
+            <span>vip@luxedrive.id</span>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="text-white font-bold mb-stack-md">Newsletter</h4>
+        <p class="text-on-tertiary-container text-sm mb-4">Dapatkan info armada terbaru dan promo eksklusif.</p>
+        <div class="flex">
+          <input class="bg-white/5 border border-on-tertiary-fixed-variant rounded-l-lg px-4 py-2 w-full text-white focus:outline-none focus:border-secondary-fixed" placeholder="Email Anda" type="email"/>
+          <button class="bg-primary-container text-white px-4 rounded-r-lg hover:bg-primary transition-colors">Kirim</button>
+        </div>
+      </div>
+      <div class="col-span-full border-t border-on-tertiary-fixed-variant pt-stack-md text-center">
+        <p class="text-on-tertiary-container text-sm">&copy; 2025 LuxeDrive Premium Indonesia. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a class="fixed bottom-8 right-8 z-[100] bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 active:scale-95 transition-all group" href="https://wa.me/6281112345678">
+    <span class="material-symbols-outlined text-[32px]">chat</span>
+    <span class="absolute right-full mr-4 bg-white text-on-background px-4 py-2 rounded-lg text-sm font-bold shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-outline-variant">
+      Butuh Bantuan? Hubungi Kami
+    </span>
+  </a>
+
+  <script src="assets/main.js"></script>
+</body>
+</html>
